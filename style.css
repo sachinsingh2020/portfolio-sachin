@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    box-sizing: border-box;
+    padding: .5rem;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main: #002648;
+    --sub-main: #094e83;
+    --yellow: #FFB000;
+    --black: #000;
+    --white: #fff;
+    --gray: #E5E5E5;
+}
+
+button,
+input,
+select {
+    border: 0;
+    cursor: pointer;
+}
+
+border:focus,
+input:focus,
+select:focus {
+    outline: none;
+}
+
+a {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3rem !important;
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    line-height: 4.8rem;
+}
+
+h1 span {
+    color: var(--yellow) !important;
+}
+
+h2 {
+    color: var(--main) !important;
+    font-size: 1.5rem !important;
+}
+
+h3 {
+    font-size: .8rem !important;
+}
+
+h4 {
+    font-size: 1rem !important;
+    color: white !important;
+}
+
+p {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+hr {
+    width: 150px;
+    margin: .1rem 0 !important;
+    border: 3px solid #FFB000 !important;
+}
+
+.skills-hr {
+    width: 350px;
+    margin: .1rem 0 !important;
+    border: 3px solid #FFB000 !important;
+}
+
+.container {
+    max-width: 1400px;
+    /* background-color: var(--gray); */
+}
+
+.fdb-block {
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 0;
+    background-color: unset;
+}
+
+.flex-colo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* HERO STYLING  */
+.hero {
+    background-color: var(--main) !important;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+nav ul li a {
+    font-size: .7rem;
+    padding: 0 1.2rem !important;
+    font-weight: 600;
+    color: var(--white) !important;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: var(--yellow) !important;
+    transition: ease-in-out .3s;
+}
+
+nav {
+    background-color: var(--sub-main) !important;
+}
+
+.img-fluid {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-small {
+    color: var(--gray);
+
+}
+
+.hero-image {
+    margin-left: 2.5rem !important;
+}
+
+.hero-small button {
+    width: 30%;
+    padding: 1rem 0;
+    background-color: var(--yellow) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+/* ABOUT STYLING  */
+#about-me,
+#what-i-do,
+#works,
+#contact-me {
+    padding: 3rem 0;
+}
+
+.aboutStrong {
+    color: black;
+}
+
+.aboutImage {
+    height: 700px;
+    border: 15px solid white;
+    box-shadow: 0px 0px 10px 1px #d9d9d9;
+}
+
+.aboutImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-text .aboutStrong {
+    margin: .48rem 0;
+}
+
+/* SERVICES  */
+
+.whatIdo {
+    padding: 5rem 0;
+    background-color: var(--main) !important;
+    width: 100% !important;
+}
+
+.whatIdo-box {
+    background-color: #032b49 !important;
+    height: 25rem;
+    width: 25rem;
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1rem;
+    box-shadow: inset 3px 3px 20px 1px #2985db !important;
+}
+
+.whatIdo-box p {
+    color: rgba(255, 255, 255, 0.668);
+}
+
+.whatIdo-box i {
+    margin: .5rem 0;
+}
+
+.whatIdo-box h3 {
+    color: var(--yellow) !important;
+}
+
+/* WORKS  */
+.work-button {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work-button button {
+    padding: .5rem 2rem;
+    margin: 1rem;
+    background-color: unset;
+    border: 2px solid #002648;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.work-box {
+    background-color: var(--gray);
+    height: 200px;
+    position: relative;
+}
+
+.work-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.work-overlay {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+    background-color: #000000af;
+    transition: ease-in-out .5s;
+    text-align: center;
+    transform: scale(0);
+}
+
+.work-overlay button {
+    width: 40%;
+    padding: .7rem 0;
+    background-color: var(--white);
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--yellow) !important
+}
+
+.work-overlay h4 {
+    color: white !important;
+}
+
+.work-box:hover .work-overlay {
+    transform: scale(1);
+    transition: ease-in-out .3s;
+}
+
+.mixitup-control-active {
+    background-color: var(--main) !important;
+    color: var(--white) !important;
+}
+
+.gaps {
+    gap: 40px;
+}
+
+.pagination li {
+    padding: .4rem 1.1rem;
+    border: 2px solid #FFB000;
+    margin: 0 .5rem;
+    font-weight: 700;
+    color: var(--main) !important;
+}
+
+.pagination .active {
+    background-color: var(--yellow) !important;
+    color: var(--white) !important;
+}
+
+/* CONTACT ME  */
+
+#contact-me .contact {
+    border-top: 10px solid #FFB000;
+    width: 100%;
+    background-color: var(--main) !important;
+    padding: 6rem 0;
+    margin-top: 2rem;
+}
+
+.contact input,
+.contact textarea {
+    background-color: var(--sub-main) !important;
+    box-shadow: 0px 7px 18px -10px #000000a8;
+    border: 0;
+    margin: .8rem 0 3rem 0;
+    padding: 1.3rem .9rem;
+    color: var(--white) !important;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background-color: var(--sub-main) !important;
+    color: var(--white) !important;
+
+}
+
+.contact button {
+    width: 100%;
+    background-color: var(--yellow) !important;
+    border: 0;
+    color: var(--white) !important;
+    font-weight: bold;
+}
+
+/* SKILLS  */
+.skill-container {
+    max-width: 1400px;
+}
